@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Find Me/Trovami</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="stili.css" />
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Find Me/Trovami</a>
+            <div class="ml-auto">
+                <button onclick="switchLanguage('en')" class="btn btn-sm btn-outline-light mr-2">🇬🇧 English</button>
+                <button onclick="switchLanguage('it')" class="btn btn-sm btn-outline-light">🇮🇹 Italiano</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center mt-5">
+        <h1 class="mb-4" data-i18n="title">Find My Location</h1>
+        <button id="find-me" class="btn btn-primary btn-lg" onclick="geoFindMe()">
+            <span data-i18n="findButton">Find My Location</span>
+        </button>
+        <p id="status" class="mt-3"></p>
+        <a id="map-link" target="_blank" class="btn btn-outline-success mt-3"></a>
+        <div id="map" class="mt-4"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="geofind.js"></script>
+</body>
+
+</html>

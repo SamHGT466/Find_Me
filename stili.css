@@ -1,0 +1,38 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+#status {
+    font-weight: bold;
+    color: #333;
+}
+
+#map-link {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    margin: 20px auto;
+}
+.navbar {
+    margin-bottom: 30px;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+[data-i18n] {
+    transition: opacity 0.3s ease;
+}
+
+.lang-changing {
+    opacity: 0.5;
+}
